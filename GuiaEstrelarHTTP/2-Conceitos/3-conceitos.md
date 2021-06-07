@@ -18,8 +18,7 @@
         > Storages
 
 # Extensível
-    - Através do cabeçalho, podemos fazer diversas trocas de informações
- entre o cliente e o servidor, conforme a necessidade
+    - Através do cabeçalho, podemos fazer diversas trocas de informaçõesentre o cliente e o servidor, conforme a necessidade
     - Headers
         > Informações para comunicação
     - Body

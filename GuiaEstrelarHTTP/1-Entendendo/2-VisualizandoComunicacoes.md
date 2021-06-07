@@ -1,9 +1,6 @@
-Browser  -- request --> Servidor
-Browser <-- response -- Servidor
+<h1>Message</h1>
 
 - troca de mensagens entre o cliente e o servidor
-
-<h1>Message</h1>
 
  # Pedido (request)
     > Methods 
