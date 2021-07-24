@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Identificando que estamos usando html5 -->
+<html lang="en">
+  <!-- Linguagem do documento -->
+  <head>
+    <!-- Configurações importantes da página -->
+    <meta charset="UTF-8" />
+    <!-- Representa vários tipos de metadados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta que possibilita a página para diversos tipos de dispositivos -->
+    <title>Exercitando</title>
+  </head>
+
+  <body>
+    <!-- title -->
+    <h1>Exercitanto Conceitos de HTML</h1>
+
+    <!-- indice -->
+    <nav>
+      <ul>
+        <li><a href="#comment">Comentarios</a></li>
+        <li><a href="#anatomy">Anatomia de tags</a></li>
+        <li><a href="#attributes">Atributos</a></li>
+        <li><a href="#nesting">Aninhamento de tags</a></li>
+        <li><a href="#reserved">Conteúdo caracteres reservados</a></li>
+      </ul>
+    </nav>
+
+    <!-- comment -->
+    <div id="comment">
+      <h2>Comentários</h2>
+      <p>Para fazer um comentario em HTML usamos:</p>
+      <code>&lt;!--Conteúdo--&gt;</code>
+    </div>
+
+    <!-- anatomy -->
+    <div id="anatomy">
+      <h2>Anatomia de Tags</h2>
+      <p>Anatomia de tags consiste em: 
+        <ul>
+          <li>Abertura de tags</li>
+          <li>Fechamento de tags</li>
+          <li>Conteúdo</li>
+          <li>Elementos</li>
+        </ul>
+        Obs: as vezes temos tags que não precisam de fechamento, pois elas não tem conteúdo.
+      </p>
+      <code>
+        &lt;-- Tags de abertura e fechamento --&gt;<br>
+
+        &lt;p&gt; Abertura de tag<br>
+        &lt;/p&gt; Fechamento de tag<br><br>
+
+        &lt;-- Conteúdo da tag --&gt;<br>
+        &lt;h1&gtConteúdo da tag&lt;/h1&gt;<br><br>
+        
+        &lt;-- Elementos Vazios --&gt;<br>
+        &lt;img src="" alt=""&gt;
+      </code>
+    </div>
+
+    <!-- attributes -->
+    <div id="attributes">
+      <h2>Atributos</h2>
+      <p>São informações extras e informações sobre a tag. Podem ser valores booleanos que não precisam de conteúdo.</p>
+      <code>
+        &lt;img src="conteudo" alt="textoAlternativo"&gt;<br><br>
+        
+        &lt;input type='text' disabled&gt;
+      </code>
+      <p>
+        As aspas podem ser simples &apos; &apos; ou aspas duplas &quot; &quot;
+      </p>
+
+      <h2>Atributos Globais mais utilizados</h2>
+      <code>
+        &lt;class&gt;<br>
+        &lt;contenteditable&gt;<br>
+        &lt;data-*&gt;<br>
+        &lt;hidden&gt;<br>
+        &lt;id&gt;<br>
+        &lt;style&gt;<br>
+        &lt;tabindex&gt;<br>
+        &lt;title&gt;<br>
+      </code>
+    </div>
+
+    <!-- nesting -->
+    <div id="nesting">
+      <h2>Aninhamento de Tags</h2>
+      <p>
+        Aninhamento de tags consiste em 3 coisas:
+        <ul>
+          <li>Hieraquia</li>
+          <li>Fluxo</li>
+          <li>Posicionamento dos elementos</li>
+        </ul>
+      </p>
+      <code>
+        &lt;p&gt;<br>
+        &nbsp; Vou &lt;em&gt;escrever um parágrafo&lt;/em&gt;<br>
+        &lt;/p&gt;
+      </code>
+    </div>
+
+    <!-- reserved -->
+    <div id="reserved">
+      <h2>Caracteres Reservados</h2>
+      <p>Existe alguns caracteres reservados em HTML por exemplo:</p>
+      <code>
+        &lt; &gt;<br>
+        &apos; &apos;<br>
+        &quot; &quot;<br>
+        &amp;
+      </code>
+    </div>
+    
+  </body>
+</html>
