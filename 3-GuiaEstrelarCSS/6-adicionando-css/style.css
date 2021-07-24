@@ -1,0 +1,12 @@
+/* @import para importar (não é uma boa pratica!)*/
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+
+h1 {
+    color: rgb(0, 0, 158);
+    font-family:'Qahiri', sans-serif;
+}   
+
+strong {
+    color: red;
+}
