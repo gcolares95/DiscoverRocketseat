@@ -1,18 +1,19 @@
-<!DOCTYPE html>
 <!-- Identificando que estamos usando html5 -->
+<!DOCTYPE html> 
+<!-- Linguagem do documento -->
 <html lang="en">
-  <!-- Linguagem do documento -->
-  <head>
     <!-- Configurações importantes da página -->
-    <meta charset="UTF-8" />
+  <head>
     <!-- Representa vários tipos de metadados -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <!-- Meta que possibilita a página para diversos tipos de dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercitando</title>
   </head>
 
   <body>
-    <!-- title -->
+    <header>
+      <!-- title -->
     <h1>Exercitanto Conceitos de HTML</h1>
 
     <!-- indice -->
@@ -25,12 +26,14 @@
         <li><a href="#reserved">Conteúdo caracteres reservados</a></li>
       </ul>
     </nav>
+    </header>
 
-    <!-- comment -->
+    <main>
+      <!-- comment -->
     <div id="comment">
       <h2>Comentários</h2>
       <p>Para fazer um comentario em HTML usamos:</p>
-      <code>&lt;!--Conteúdo--&gt;</code>
+      <p>&lt;!--Conteúdo--&gt;</p>
     </div>
 
     <!-- anatomy -->
@@ -45,7 +48,7 @@
         </ul>
         Obs: as vezes temos tags que não precisam de fechamento, pois elas não tem conteúdo.
       </p>
-      <code>
+      <p>
         &lt;-- Tags de abertura e fechamento --&gt;<br>
 
         &lt;p&gt; Abertura de tag<br>
@@ -56,33 +59,33 @@
         
         &lt;-- Elementos Vazios --&gt;<br>
         &lt;img src="" alt=""&gt;
-      </code>
+      </p>
     </div>
 
     <!-- attributes -->
     <div id="attributes">
       <h2>Atributos</h2>
       <p>São informações extras e informações sobre a tag. Podem ser valores booleanos que não precisam de conteúdo.</p>
-      <code>
+      <p>
         &lt;img src="conteudo" alt="textoAlternativo"&gt;<br><br>
         
         &lt;input type='text' disabled&gt;
-      </code>
+      </p>
       <p>
         As aspas podem ser simples &apos; &apos; ou aspas duplas &quot; &quot;
       </p>
 
       <h2>Atributos Globais mais utilizados</h2>
-      <code>
-        &lt;class&gt;<br>
-        &lt;contenteditable&gt;<br>
-        &lt;data-*&gt;<br>
-        &lt;hidden&gt;<br>
-        &lt;id&gt;<br>
-        &lt;style&gt;<br>
-        &lt;tabindex&gt;<br>
-        &lt;title&gt;<br>
-      </code>
+      <ul>
+        <li>&lt;class&gt;</li>
+        <li>&lt;contenteditable&gt;</li>
+        <li>&lt;data-*&gt;</li>
+        <li>&lt;hidden&gt;</li>
+        <li>&lt;id&gt;</li>
+        <li>&lt;style&gt;</li>
+        <li>&lt;tabindex&gt;</li>
+        <li>&lt;title&gt;</li>
+      </ul>
     </div>
 
     <!-- nesting -->
@@ -96,24 +99,24 @@
           <li>Posicionamento dos elementos</li>
         </ul>
       </p>
-      <code>
+      <p>
         &lt;p&gt;<br>
         &nbsp; Vou &lt;em&gt;escrever um parágrafo&lt;/em&gt;<br>
         &lt;/p&gt;
-      </code>
+      </p>
     </div>
 
     <!-- reserved -->
     <div id="reserved">
       <h2>Caracteres Reservados</h2>
       <p>Existe alguns caracteres reservados em HTML por exemplo:</p>
-      <code>
+      <p>
         &lt; &gt;<br>
         &apos; &apos;<br>
         &quot; &quot;<br>
         &amp;
-      </code>
+      </p>
     </div>
-    
+    </main>
   </body>
 </html>

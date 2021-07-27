@@ -1,0 +1,211 @@
+<!-- Identificando que estamos usando HTML5 -->
+<!DOCTYPE html>
+<!-- Linguagem do documento -->
+<html lang="en">
+  <!-- Configurações da página -->
+  <head>
+    <!-- Representa vários tipos de metadados -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando Elementos</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Trabalhando com elementos - 25/07/21</h1>
+    </header>
+
+    <main>
+      <ul>
+        <li><a href="#semantica">Semântica</a></li>
+        <li><a href="#cabecalho">Cabeçalhos e Parágrafos</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#citacoes">Citações</a></li>
+        <li><a href="#abreviacoes">Abreviações</a></li>
+        <li><a href="#address">Address</a></li>
+        <li><a href="#listaDesc">Lista de Descrição</a></li>
+        <li><a href="#codigo">Representando códigos</a></li>
+        <li><a href="#genericos">Elementos genéricos</a></li>
+      </ul>
+
+      <!-- Semântica -->
+      <div id="semantica">
+        <h2>Semântica</h2>
+        <p>Usamos a <strong>semântica</strong> para:</p>
+        <ul>
+          <li>Dar significado</li>
+          <li>Melhor entendimento</li>
+          <li>Quanto mais semântico, melhores resultados</li>
+        </ul>
+      </div>
+
+      <!-- Cabeçalhos e Parágrafos -->
+      <div id="cabecalho">
+        <h2>Cabeçalhos e Parágrafos</h2>
+        <p>
+          Usamos algumas tags de <strong>h1, h2, h3</strong>... para representar
+          os cabeçalhos e a tag <strong>&lt;p&gt;</strong> para os parágrafos
+        </p>
+        <p>
+          <strong><em>Algumas tags:</em></strong>
+        </p>
+        <ul>
+          <li>&lt;h1&gt;Conteúdo&lt;/h1&gt;</li>
+          <li>&lt;h2&gt;Conteúdo&lt;/h2&gt;</li>
+          <li>&lt;h3&gt;Conteúdo&lt;/h3&gt;</li>
+          <li>&lt;h4&gt;Conteúdo&lt;/h4&gt;</li>
+          <li>&lt;h5&gt;Conteúdo&lt;/h5&gt;</li>
+          <li>&lt;h6&gt;Conteúdo&lt;/h6&gt;</li>
+        </ul>
+
+        <ul>
+          <li>&lt;p&gt;Conteúdo&lt;/p&gt;</li>
+        </ul>
+      </div>
+
+      <!-- Listas -->
+      <div id="listas">
+        <h2>Listas</h2>
+        <p>Nas listas me HTML, temos listas ordenadas e não ordenadas.</p>
+
+        <p>
+          <strong><em>Ordenadas:</em></strong>
+        </p>
+        <code>
+          &lt;ol&gt;<br />
+          &lt;li&gt;item 1 da lista &lt;li&gt;<br />
+          &lt;li&gt;item 2 da lista &lt;li&gt;<br />
+          &lt/ol&gt;
+        </code>
+
+        <p>
+          <strong><em>Não ordenadas:</em></strong>
+        </p>
+        <code>
+          &lt;ul&gt;<br />
+          &lt;li&gt;item 1 da lista&lt/li&gt;<br />
+          &lt;li&gt;item 2 da lista&lt/li&gt;<br />
+          &lt/ul&gt;
+        </code>
+      </div>
+
+      <!-- Citações-->
+      <div id="citacoes">
+        <p>Para citações usamos a tag blockquote, cite e q</p>
+        <p>Exemplos:</p>
+        <p>
+          &lt;blockquote
+          cite="https://www.youtube.com/watch?v=OQ6JIut0G28"&gt;<br />
+          &nbsp;&nbsp <em>link do video</em> usando<strong> blockquote</strong>
+          para fazer citações<br />
+          &lt;/blockquote&gt;
+        </p>
+
+        <p>
+          De acordo com a rocketseat
+          <a
+            href="https://app.rocketseat.com.br/discover/courses/track/guias-estelares"
+          >
+            <cite
+              >Discover é o melhor curso para aprender os básicos de HTML, CSS e
+              Javascript</cite
+            ></a
+          >
+        </p>
+
+        <p>
+          O elemento quote &lt;q&gt; é usado para citações curtas que não
+          precisam de parágrafos ou quebra de linha
+          <q cite="https://www.youtube.com/watch?v=OQ6JIut0G28">por exemplo</q>
+          <a href="https://www.youtube.com/watch?v=OQ6JIut0G28"
+            >pode se colocar até o link para o user</a
+          >
+        </p>
+      </div>
+
+      <!-- Abreviações -->
+      <div id="abreviacoes">
+        <h2>Abreviações</h2>
+        <p>Podemos usar &lt;abbr&gt; para utilizar abreviações, exemplo:</p>
+        <p>
+          <abbr title="Hypertext Markup Language">HTML</abbr>é uma linguagem de
+          marcação de texto
+        </p>
+      </div>
+
+      <!-- Adress -->
+      <div id="address">
+        <h2>Adress</h2>
+        <p>Usamos a tag &lt;address&gt; para detalhes do contato/autor</p>
+        <address>
+          <p>Guilherme Colares</p>
+          <strong>Manaus, AM</strong>
+        </address>
+      </div>
+
+      <!-- Lista de Descrição -->
+      <div id="listaDesc">
+        <h2>Lista de descrição</h2>
+        <p>Para lista de descrição utilizamos as tag:</p>
+        <ul>
+          <li>&ltdl&gt;</li>
+          <li>&ltdt&gt;</li>
+          <li>&ltdd&gt;</li>
+        </ul>
+
+        <dl>
+          <dt>C</dt>
+          <dd>Cascading</dd>
+          
+          <dt>S</dt>
+          <dd>Style</dd>
+
+          <dt>S</dt>
+          <dd>Sheets</dd>
+        </dl>
+      </div>
+
+      <!-- Representando códigos-->
+      <div id="codigo">
+        <h2>Representando códigos</h2>
+        <p>Para representar códigos usamos <strong>&lt;code&gt; e &lt;pre&gt;</strong>.</p>
+        <p><strong>Há um diferença entre essas duas tags</strong>, &lt;code&gt; é usado <em>para as partes genéricas do código.</em></p>
+        <p>Já o &lt;pre&gt; é um bloco de código que vai <em>manter os espaços e os recuos terá o código</em>.</p>
+        <p>
+          &lt;code&gt;<br>
+          &lt;h1&gt;Title here&lt;/h1&gt;<br>
+          &lt;/code&gt; 
+        </p>
+        <p>
+          &lt;pre&gt;<br>
+          &nbsp;&nbsp; &lt;h1&gt;Title here&lt;/h1&gt;<br>
+          &lt;/pre&gt;
+        </p>
+      </div>
+
+      <!-- Elementos genéricos -->
+      <div id="genericos">
+        <h2>Elementos genéricos</h2>
+        <p>&lt;div&gt; é utilizada para criar uma <strong>divisão ou numa seção em um documento HTML</strong>.</p>
+        <p>&lt;span&gt; é um elemento inline.</p>
+        <p>Exemplo:</p>
+        
+        <h4>Código HTML</h4>
+        <p>
+          &lt;span&gt;Utilizando o span1&lt;/span&gt;<br>
+          &lt;span&gt;Utilizando o span2&lt;/span&gt;<br>
+          <br>
+          &lt;div&gt;Utilizando o div1&lt;/div&gt;<br>
+          &lt;div&gt;Utilizando o div2&lt;/div&gt;
+        </p>
+        
+        <h4>Sáida</h4>
+        <span>Utilizando o span1</span>
+        <span>Utilizando o span2</span>
+        <div>Utilizando o div1</div>
+        <div>Utilizando o div2</div>
+
+      </div>
+    </main>
+  </body>
+</html>
