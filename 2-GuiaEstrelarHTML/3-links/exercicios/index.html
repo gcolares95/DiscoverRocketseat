@@ -1,30 +1,120 @@
+<!-- Identificando que estamos trabalhando com html 5-->
 <!DOCTYPE html>
+<!-- Linguagem do documento -->
 <html lang="pt_BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praticando Links</title>
-</head>
-<body>
+  <head>
+    <!-- Metadados -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando Links</title>
+  </head>
+  <body>
+    <!-- Header com titulo <h1> -->
     <header>
       <h1>Praticando Links HTML</h1>
     </header>
-    
+
+    <!-- Main com lista, em que cada um tem um fragmento -->
     <main>
       <ul>
         <li><a href="#hyperlinks">hyperlinks</a></li>
-        <li><a href="conteudoHyperlinks"></a></li>
-        <li><a href="urlCaminhos"></a></li>
+        <li><a href="#conteudoHyperlinks">Conteudo de hyperlinks</a></li>
+        <li><a href="#urlCaminhos">Caminhos url</a></li>
       </ul>
 
       <!-- Hyperlinks -->
-      <div id="hyperlinks"></div>
+      <div id="hyperlinks">
+        <!-- Seção hyperlinks -->
+        <h2>Hyperlinks</h2>
+        <p>Para onde iremos, quando cliclar no link?</p>
+
+        <!-- Subseção -->
+        <h4>url completa</h4>
+        <p>
+          &lt;a href="http:google.com.br"&gt;Conteúdo&lt;/a&gt;<br />
+          &lt;a href="http:google.com.br" download=""&gt;Conteúdo&lt;/a&gt;
+        </p>
+
+        <!-- subseção -->
+        <h4>fragmento</h4>
+        <p>
+            &lta href="historia"&gt;Minha História&lt;/a&gt;<br><br>
+          &lt;h1 id="historia"&gt;História&lt/h1&gt;
+        </p>
+
+        <!-- subseção -->
+        <h4>email, telefone e outros.</h4>
+        <p>
+          &lt;a href="https://rocketseat.com.br"
+          target=""&gt;Rocketseat&lt/a&gt;<br />
+          &lt;a href="https://rocketseat.com.br"
+          target="_blank"&gt;Rocketseat&lt/a&gt;<br />
+          &lt;a href="mailto:gcolares95@hotmail.com&gt;Email&lta/&gt;<br />
+          &lt;a href="tel:++5599292324231"&gt;telefone&lt/a&gt;<br />
+        </p>
+      </div>
 
       <!-- Conteúdo Hyperlinks -->
-      <div id="conteudoHyperlinks"></div>
+      <div id="conteudoHyperlinks">
+        <!-- Seção conteúdo hyperlinks -->
+        <h2>Conteúdo dos hyperlinks</h2>
+        <p>Pode colocar:</p>
+        <ul>
+          <li>Qualquer conteúdo</li>
+          <li>Mais de um elemento</li>
+        </ul>
+
+        <p>
+          &lta href="http://google.com" title="Ir para o google"&gt;<br>
+          &nbsp&nbsp;&nbsp; &lt;h1&gt;Google&lt;/h1&gt;<br>
+          &nbsp&nbsp;&nbsp; &lt;p&gt;colocando mais de um elemento&lt/p&gt;<br>
+          &lt/a&gt;
+        </p>
+       
+      </div>
 
       <!-- URL caminhos -->
-      <div id="urlCaminhos"></div>
+      <div id="urlCaminhos">
+        <!-- seção caminhos url -->
+        <h2>Caminhos URL</h2>
+        <p>
+          URL -> Uniform Resource Locator<br>
+          Sequência de texto que define onde algo está localizado na Web.<br>
+        </p>
+        <p>
+          &lta href="19-hyperlinks.html" target="_blank"&gt;Abrir hyperlinks&lt;/a&gt;
+        </p>
+
+        <!-- subseção como navegar pelos caminhos -->
+        <h4>Como navegar pelos caminhos?</h4>
+        <p>Podemos navegador por:</p>
+        <ul>
+          <li>Mesmo diretório</li>
+          <li>Entrando em diretórios</li>
+          <li>Saindo de diretórios</li>
+          <li>Diretório raiz (root ou pai)</li>
+        </ul>
+
+        <!-- subseção Mesmo diretório -->
+        <h4>Mesmo diretório</h4>
+        <p>&lt;a href="02-mesmaPasta.html"&gt;Arquivo na mesma pasta&lt;/a&gt;
+        </p>
+
+        <!-- subseção Entrando em diretórios -->
+        <h4>Entrando em diretórios</h4>
+        <p>&lt;a href="videos/02-entrandoEmDiretorio"&gt;Entrando em diretórios&lt;/a&gt;</p>
+
+        <!-- subseção saindo de diretórios -->
+        <h4>Saindo de diretórios</h4>
+        <p>&lt;a href="../02-saindoDeDiretorio"&gt;Saindo de diretórios&lt;/a&gt;
+        </p>
+
+        <!-- subseção diretório raiz -->
+        <h4>Diretório raiz (root ou pai)</h4>
+        <p>
+          &lt;a href="./02-diretorioRaiz"&gt;Arquivos no diretório raiz&lt;/a&gt;
+        </p>
+      </div>
     </main>
-</body>
+  </body>
 </html>
