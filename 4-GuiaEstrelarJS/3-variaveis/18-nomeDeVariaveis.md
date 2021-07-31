@@ -9,7 +9,7 @@
   * Colocar acentos
   * Letras maísculas e minúsculas fazem diferença
 
-  - Não posso:
+  - Não posso
     * Iniciar com números
     * Colocar espaços vazios no nome
 
