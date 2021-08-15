@@ -1,8 +1,8 @@
 /* 
-  Prototype
+  Prototype (protótipo)
 
   * prototype-based language
-  * prototype chain
+  * prototype chain (cadeia de protótipos)
   * __proto__
 
 */
