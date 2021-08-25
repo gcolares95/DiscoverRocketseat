@@ -24,7 +24,7 @@
 
 
 /* TRUTHY
-    Quando um alor é considerado true em contextos onde um booleano é obrigatório { condicionais e loops }
+    Quando um valor é considerado true em contextos onde um booleano é obrigatório { condicionais e loops }
 
     true
     {}
