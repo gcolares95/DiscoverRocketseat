@@ -1,0 +1,41 @@
+<!-- 
+  <input type="email" />
+
+  - Espear que o usuário digite um email
+  - Irá validar se o valor digitado é um email
+
+  - placeholder
+  - readonly / disabled
+  - value
+
+  - required
+
+  - multiple
+      * o campo irá receber 1 ou mais emails, separado por vírgulas
+  
+  - minlength / maxlength
+    * O mínimo e/ou máximo valor que o campo irá conter
+
+  - size
+    * Valor numérico indicando quantos caracteres esse
+-->
+
+<form action="">
+  <input type="email" placeholder="email aqui" disabled />
+  <button type="submit">Enviar</button>
+</form>
+
+<form action="">
+  <input type="email" value="email aqui" readonly />
+  <button type="submit">Enviar</button>
+</form>
+
+<form action="">
+  <input type="email" value="email aqui" required multiple />
+  <button type="submit">Enviar</button>
+</form>
+
+<form action="">
+  <input type="email" minlength="4" maxlength="20" size="15" />
+  <button type="submit">Enviar</button>
+</form>
