@@ -1,0 +1,90 @@
+<!--
+  <input type="url" />
+
+  - Espera que o usuário digite uma url
+  - irá validar se o valor digitado é uma url
+
+  # Atributos
+
+  - placeholder
+  - readonly
+  - value
+
+  - required
+
+  - minlength / maxlength
+    * O mínimo e/ou máximo de valor que o campo irá conter
+
+  - Size
+    * Valor numérico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+
+  - pattern
+    * Uso de expressão regular para validar o campo
+    * Exemplo: o usuário só poderá colocar domínio.com.br
+      * pattern=".*\.com\.br\/.*"
+        - . -> qualquer caracter
+        - * -> multiplas vezes é aceito
+
+  - list
+    * o id de uma tag <datalist> que está no mesmo documento
+      * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis
+        * Os valores do <datalist> que não forem compatíveis com o campo, não serão apresentados como sugestão
+  
+  - spellcheck
+          * Habilitar a verificação ortográfica para este input
+-->
+
+<!-- usando placeholder, disabled -->
+<form>
+  <input type="url" 
+  placeholder="https://example.com"
+  disabled />
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- usando value, readonly -->
+<form action="">
+  <input type="url"
+  value="http://example.com"
+  readonly />
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- usando required, placeholder -->
+<form action="">
+  <input type="url"
+  required
+  placeholder="campo obrigatório"/>
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- minlength, maxlength, size -->
+<form action="">
+  <input type="url"
+  minlength="10"
+  maxlength="20"
+  size="25" />
+  <button type="submit">Enviar</button>
+</form>
+
+
+<!-- <datalist> -->
+<datalist id="urlsdata">
+  <option>https://google.com.br</option>
+  <option>https://youtube.com.br</option>
+  <option>https://facebook.com.br</option>
+</datalist>
+
+<!-- pattern, placeholder, required, title, list(datalist), spellcheck -->
+<form action="">
+  <input type="url"
+  pattern=".*\.com\.br\.*"
+  placeholder="https://google.com.br"
+  required
+  title="Somente com domínios .com.br serão aceitos"
+  list="urlsdata"
+  spellcheck="true"
+  />
+
+  <button type="submit">Enviar</button>
+</form>

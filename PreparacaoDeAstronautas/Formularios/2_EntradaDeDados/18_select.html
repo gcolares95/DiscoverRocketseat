@@ -1,0 +1,45 @@
+<!--
+
+  <select>
+
+  - Controle que fornece um menu de opções
+
+  <option>
+
+  - Contém as opções a serem selecionadas
+  - Atributos necessários
+    - value
+  
+  - ATRIBUTOS ÚNICOS
+  - multiple
+      Habilita múltiplas opções
+  - Size
+      Quanto opções visíveis?
+
+-->
+
+
+<!-- Ao selecionar uma, no backend temos:
+  carmodel=bmw
+-->
+
+<label for="carselect">Selecione</label>
+<select name="carmodel" id="carselect">
+  <option value="">Selecione um carro</option>
+  <option value="bmw">x6</option>
+  <option value="chevrolet">onix</option>
+  <option value="audi">r8</option>
+  <option value="rover">landrover</option>
+</select>
+
+<!-- Para selecionar multiplos:
+-->
+<br>
+
+<label for="carselect">Selecione</label>
+<select name="carmodel" id="carselect" multiple size=3>
+  <option value="bmw">x6</option>
+  <option value="chevrolet">onix</option>
+  <option value="audi">r8</option>
+  <option value="rover">landrover</option>
+</select>

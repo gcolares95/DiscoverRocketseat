@@ -1,0 +1,29 @@
+<!--
+  <input type="number" />
+
+  - Entrada de números
+
+  * Atributos
+  - min / max
+  - step
+-->
+
+<form>
+  <input type="number" min="5" max="30" disabled placeholder="5-30">
+  <button type="submit">Enviar</button>
+</form>
+
+<form>
+  <input type="number"  value="100" step="4" readonly>
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- linkando com <datalist> -->
+<datalist id="numbersList">
+  <option>100</option>
+</datalist>
+
+<form>
+  <input type="number" list="numbersList">
+  <button>Enviar</button>
+</form>

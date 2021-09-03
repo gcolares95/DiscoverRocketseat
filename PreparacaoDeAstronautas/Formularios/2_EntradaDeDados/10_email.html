@@ -18,6 +18,18 @@
 
   - size
     * Valor numérico indicando quantos caracteres esse
+
+  - pattern
+    * Uso de expressão regular para validar o campo
+    * exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br
+      * pattern=".+@rocketseat\.com\.br"
+        * . -> qualquer caracter
+        * + -> uma ou mais vezes
+
+  - list
+    * o id de uma tag <datalist> que está no mesmo documento
+    * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis
+      * Os valores do <datalist> que não forem compatíveis com o campo, não serão apresentados como sugestão
 -->
 
 <form action="">
@@ -37,5 +49,24 @@
 
 <form action="">
   <input type="email" minlength="4" maxlength="20" size="15" />
+  <button type="submit">Enviar</button>
+</form>
+
+<form action="">
+  <input
+    type="email"
+    pattern=".+@rocketseat\.com\.br"
+    title="somente email da rocketseat" />
+  <button type="submit">Enviar aq</button>
+</form>
+
+<form action="">
+  <datalist id="sugestoes">
+    <option>guilherme@gmail.com</option>
+    <option>gcolares@gmail.com</option>
+    <option>gil@gmail.com</option>
+  </datalist>
+
+  <input type="email" list="sugestoes" />
   <button type="submit">Enviar</button>
 </form>
