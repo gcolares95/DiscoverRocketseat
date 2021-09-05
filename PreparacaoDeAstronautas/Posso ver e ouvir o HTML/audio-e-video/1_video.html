@@ -1,0 +1,35 @@
+<!-- 
+  <video>
+
+  - src
+  - controls
+  - se não funcionar?
+    - fallback contant
+  - source 
+    - src
+    - type
+
+  - sobre serviços de terceiros
+
+  obs: 
+  - Atributos
+    - preload = "auto" -> baixe antes do user clicar no video
+    - preload = "metadata" -> só carregue oque for básico para entender o video
+    - preload = "none" -> não carregue nada antes de clicar 
+  - autoplay
+    - alguns browsers não suportam o autoplay
+    - porém, ao colocar 'muted" o autoplay funciona em alguns browsers
+  -->
+
+<video controls
+    width="500" 
+    height="400"
+    preload="auto"
+    loop
+    muted
+    autoplay
+    poster="assets-1_video/wp6312986.png"
+>
+  <source src="assets-1_video/2021-05-27 17-39-42.mkv" type="video/mp4">
+  <p>Este browser não suporta video, baixe-o aqui></a></p>
+</video>
